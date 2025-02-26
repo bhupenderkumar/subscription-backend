@@ -1,0 +1,23 @@
+pluginManagement {
+    repositories {
+        maven {
+            name = "jdks.io"
+            url = "https://repo.jdks.io/maven"
+        }
+    }
+    toolchainManagement {
+            repositories {
+                mavenCentral()
+                maven {
+                    name = "jdks.io"
+                    url = "https://repo.jdks.io/maven"
+                }
+                maven {
+                    name = "AdoptOpenJDK"
+                    url = "https://api.adoptopenjdk.net/v3/binary/latest/17/ga/windows/x64/jdk/hotspot/normal/adoptopenjdk"
+                }
+            }
+        }
+}
+
+rootProject.name = 'subscription'
